@@ -1,0 +1,61 @@
+\documentclass[10pt]{exam}
+\renewcommand\thechoice{\alph{choice}}
+\usepackage{geometry}
+\geometry{lmargin = 0.5in, rmargin = 0.5in, bmargin = 1in,footskip = 0.3in, tmargin=1in}
+\usepackage{etoolbox}
+\patchcmd{\choices}{\topsep=0pt}{\topsep=0pt
+\itemsep=0.1in}{}{}\begin{document}
+\setlength\fillinlinelength{0.5in}
+\header{}
+{\bf{Math 100
+ Midterm
+ -- 50 minutes
+\\November 20, 2016
+}}
+{\bf{Form A}\\~}
+\vspace{.5cm}
+\begin{questions}
+
+%1
+\begin{minipage}[c]{\linewidth}
+\question What is the result of multiplying any number by zero?
+\begin{choices}
+\choice 0
+\vspace{-0.1in}
+\choice Infinity
+\vspace{-0.1in}
+\choice The original number
+\vspace{-0.1in}
+\choice 99
+\end{choices}
+\end{minipage}
+
+%2
+\begin{minipage}[c]{\linewidth}
+\question What is my favorite color?
+\begin{choices}
+\choice Green
+\vspace{-0.1in}
+\choice Black
+\vspace{-0.1in}
+\choice Blue
+\vspace{-0.1in}
+\choice Red\end{choices}
+\end{minipage}
+
+%3
+\begin{minipage}[c]{\linewidth}
+\question What is sum of one and one?
+\begin{choices}
+\choice 3
+\vspace{-0.1in}
+\choice 4
+\vspace{-0.1in}
+\choice 1
+\vspace{-0.1in}
+\choice 2
+\end{choices}
+\end{minipage}
+
+\end{questions}
+\end{document}
